@@ -109,9 +109,9 @@ textarea {
     bottom: 0;
     left: 0;
     z-index: -99;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    transform: scale(1.1);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    transform: scale(1.2);
   }
 
   .video-foreground,
@@ -144,8 +144,11 @@ textarea {
   }
 
   @media only screen and (max-width: 1366px) {
-    .video-background .video-foreground {
-      visibility: hidden;
+    .video-background iframe {
+      display: none;
+    }
+    .video-background {
+      background-image: url(../img/mobile-bg.jpg);
     }
 
 /* ==========================================================================
